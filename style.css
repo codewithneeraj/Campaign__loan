@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+}
+.loan{
+    background-color:#FDE5DA;
+    padding: 48px 56px 64px;
+}
+.loan__title{
+    color: #58003A;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 24px;
+}
+.loan__info{
+    grid-template-columns: repeat(4, 1fr);
+}
+.loan__description{
+    display: flex;
+    align-items: flex-start;
+}
+.loan__description--icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.loan__description--text{
+    color: #323D42;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+.loan__form{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    border: 1px solid #E2E7E9;
+    background-color: #FFFFFF;
+    padding: 32px 80px 44px 80px;
+    
+}
+
+.loan__question--text{
+    margin-bottom: 16px;
+}
+#button1,
+#button2 {
+    display: inline-block;
+    border: none;
+    background: #DE313B;
+    padding: 8px;
+    color: white;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 16px;
+}
+
+#button1 {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+#button2 {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    margin-left: -3px;
+}
+
+.loan__select--text{
+    margin-bottom: 16px;
+    display: inline-block;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #323D42;
+}
+.loan__select--option{
+    border: 1px solid #CBCCCC;
+    border-radius: 4px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.loan__cta{
+    margin: auto;
+}
+.loan__cta--btn{
+    padding: 12px 25px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #DE313B;
+    border: 1px solid #DE313B;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+/* Media Queries*/
+
+@media screen and (max-width:768px){
+    .loan{
+        padding: 32px 16px;
+    }
+    .loan__info {
+            grid-template-columns: 320px;
+            justify-content: center;
+        }
+    .loan__form{
+        grid-template-columns: 320px;
+        justify-content: center;
+        text-align: center;
+    }  
+    .loan__select{
+        margin-top: 57px;
+    }
+    .loan__cta--btn{
+        margin-top: 57px;
+    }  
+    
+}
